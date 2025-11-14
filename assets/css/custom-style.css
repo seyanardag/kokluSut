@@ -3,3 +3,10 @@
 }
 
 
+
+/* #region  blog-details.html*/
+.wp-block-tag-cloud a, .tagcloud a {
+padding: 5px 10px !important;
+}
+
+/* #endregion  */
