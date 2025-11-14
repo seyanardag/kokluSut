@@ -79,9 +79,11 @@ Version: 1.0.0
   --error-color: #dc3545;
   --border-color: #bfbfbf;
   /* --title-font: "Fredoka", sans-serif; */
-  --title-font: "Poetsen One", sans-serif;
+  /* --title-font: "Poetsen One", sans-serif; */
+  --title-font: "Poppins", sans-serif;
   /* --body-font: "DM Sans", sans-serif; */
-  --body-font: "Poetsen One", sans-serif;
+  /* --body-font: "Poetsen One", sans-serif; */
+  --body-font: "Poppins", sans-serif;
   --icon-font: "Font Awesome 5 Pro";
   --main-container: 1290px;
   --container-gutters: 30px;
