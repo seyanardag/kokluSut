@@ -127,36 +127,79 @@
 
   $(".vs-menu-wrapper").vsmobilemenu();
 
-  /*---------- 04. Sticky fix ----------*/
-  var lastScrollTop = "";
-  var scrollToTopBtn = ".scrollToTop";
+  // /*---------- 04. Sticky fix ----------*/
+  // var lastScrollTop = "";
+  // var scrollToTopBtn = ".scrollToTop";
 
-  function stickyMenu($targetMenu, $toggleClass, $parentClass) {
+  // function stickyMenu($targetMenu, $toggleClass, $parentClass) {
+  //   var st = $(window).scrollTop();
+  //   var height = $targetMenu.css("height");
+  //   $targetMenu.parent().css("min-height", height);
+  //   if ($(window).scrollTop() > 800) {
+  //     $targetMenu.parent().addClass($parentClass);
+
+  //     if (st > lastScrollTop) {
+  //       $targetMenu.removeClass($toggleClass);
+  //     } else {
+  //       $targetMenu.addClass($toggleClass);
+  //     }
+  //   } else {
+  //     $targetMenu.parent().css("min-height", "").removeClass($parentClass);
+  //     $targetMenu.removeClass($toggleClass);
+  //   }
+  //   lastScrollTop = st;
+  // }
+  // $(window).on("scroll", function () {
+  //   stickyMenu($(".sticky-active"), "active", "will-sticky");
+  //   if ($(this).scrollTop() > 500) {
+  //     $(scrollToTopBtn).addClass("show");
+  //   } else {
+  //     $(scrollToTopBtn).removeClass("show");
+  //   }
+  // });
+
+
+/*---------- 04. Sticky fix - OPTİMİZE EDİLMİŞ VERSİYON ----------*/
+var lastScrollTop = 0; // lastScrollTop'u başlangıçta 0 yapın (önerilir)
+var scrollToTopBtn = ".scrollToTop";
+
+function stickyMenu($targetMenu, $toggleClass, $parentClass) {
     var st = $(window).scrollTop();
-    var height = $targetMenu.css("height");
-    $targetMenu.parent().css("min-height", height);
-    if ($(window).scrollTop() > 800) {
-      $targetMenu.parent().addClass($parentClass);
+    var $parent = $targetMenu.parent(); // Parent elemanı önbelleğe al
+    var height = $targetMenu.outerHeight(); // outerHeight() kullanın (padding ve border dahil)
 
-      if (st > lastScrollTop) {
-        $targetMenu.removeClass($toggleClass);
-      } else {
-        $targetMenu.addClass($toggleClass);
-      }
+    if (st > 800) {
+        // YAPILAN ÖNEMLİ DEĞİŞİKLİK: min-height'ı sadece *ilk* kez yapışkan olduğunda ayarla
+        if (!$parent.hasClass($parentClass)) {
+            $parent.css("min-height", height);
+            $parent.addClass($parentClass);
+        }
+
+        if (st > lastScrollTop) {
+            $targetMenu.removeClass($toggleClass); // Aşağı kayarken gizle
+        } else {
+            $targetMenu.addClass($toggleClass); // Yukarı kayarken göster
+        }
     } else {
-      $targetMenu.parent().css("min-height", "").removeClass($parentClass);
-      $targetMenu.removeClass($toggleClass);
+        // Yapışkanlık sona erdiğinde min-height'ı kaldır
+        $parent.css("min-height", "").removeClass($parentClass);
+        $targetMenu.removeClass($toggleClass);
     }
+    
     lastScrollTop = st;
-  }
-  $(window).on("scroll", function () {
+}
+
+$(window).on("scroll", function () {
+    // Sadece bu iki fonksiyonu çalıştırın
     stickyMenu($(".sticky-active"), "active", "will-sticky");
+    
+    // Scroll To Top butonu mantığı
     if ($(this).scrollTop() > 500) {
       $(scrollToTopBtn).addClass("show");
     } else {
       $(scrollToTopBtn).removeClass("show");
     }
-  });
+});
 
   /*---------- 05. Scroll To Top ----------*/
   $(scrollToTopBtn).each(function () {
