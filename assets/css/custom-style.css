@@ -11,3 +11,27 @@ padding: 5px 10px !important;
 
 
 
+.breadcumb-wrapper {
+    /* Sözde elemanın referans noktası olması için gereklidir */
+    position: relative;
+    /* İçeriğin (başlık, menü) overlay'in üstünde görünmesini sağlar */
+    z-index: 1; 
+}
+
+/* Arka plan karartma katmanını oluşturan sözde eleman */
+.breadcumb-wrapper::before {
+    content: "";
+    /* Konumlandırma */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* Karartma rengi ve saydamlığı */
+    /* rgba(0, 0, 0, 0.4) -> Siyah renk ve %40 saydamlık demektir */
+    background-color: rgba(0, 0, 0, 0.4); 
+    
+    /* Overlay'in resmin üstüne, diğer içeriğin (h1, ul) altına gelmesini sağlar */
+    z-index: -1; 
+}
