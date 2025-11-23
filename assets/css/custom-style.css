@@ -195,6 +195,17 @@ body>header>div.header-top>div>div>div>div>a>i:hover {
 .product-details .vs-btn {
     padding: 18px 20px !important; 
 }
+
+@media (max-width: 767px) {
+.product-description__tab {
+     width: 13rem !important;
+}
+
+    .product-description__tab .nav .nav-link {
+        padding: 9px 0px 9px 0;
+    }
+}
+
 /* #endregion  Product-Detail */
 
 /* #region breadcumb*/
