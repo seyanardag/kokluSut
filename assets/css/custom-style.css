@@ -191,6 +191,12 @@ body>header>div.header-top>div>div>div>div>a>i:hover {
 
 /* #endregion  */
 
+/* #region  Product-Detail */
+.product-details .vs-btn {
+    padding: 18px 20px !important; 
+}
+/* #endregion  Product-Detail */
+
 /* #region breadcumb*/
 .breadcumb-wrapper {
      position: relative;
@@ -246,7 +252,7 @@ body>header>div.header-top>div>div>div>div>a>i:hover {
     z-index: 0;
 }
 
-/* #ENDregion About */
+/* #endregion About */
 
 /* #region Contact */
 .contact-layout1 .vs-comment-form .comment-respond .form-control {
