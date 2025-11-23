@@ -238,6 +238,21 @@ body>header>div.header-top>div>div>div>div>a>i:hover {
      padding: 1rem;
 }
 
+ .about-layout1 .about-bottom {
+    margin-top: -17.5%;
+    background-color: var(--smoke-color);
+} 
+@media (max-width: 1299px) {
+    .about-layout1 .about-bottom {
+        margin-top: -7.5%;
+    }
+}
+
+@media (max-width: 1199px) {
+    .about-layout1 .about-bottom {
+        margin-top: 40px;
+    }
+}
 /* #endregion Contact */
 
 /* #region Footer*/
