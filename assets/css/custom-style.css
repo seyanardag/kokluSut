@@ -233,6 +233,21 @@ body>header>div.header-top>div>div>div>div>a>i:hover {
 
 /* #endregion  */
 
+/* #region About */
+
+.custom-filter-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+/* #ENDregion About */
+
 /* #region Contact */
 .contact-layout1 .vs-comment-form .comment-respond .form-control {
      padding: 1rem;
