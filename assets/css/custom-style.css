@@ -25,6 +25,11 @@ body>header>div.header-top>div>div>div>div>a>i:hover {
 
 /* #region  MainPage   */
 
+.mobile-logo-img {
+     width: 150px !important;
+     height: auto !important;
+}
+
 .custom-profile-pic {
      width: 100px;
      height: 100px;
