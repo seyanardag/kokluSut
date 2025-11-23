@@ -1,0 +1,287 @@
+/* #region  header-top    */
+.header-top {
+     background-color: #125d2f !important;
+}
+
+body>header>div.header-top>div>div>div>div>ul>li,
+body>header>div.header-top>div>div>div>div>ul>li>i,
+body>header>div.header-top>div>div>div>div>a>i {
+     color: #ffffff !important;
+}
+
+body>header>div.header-top>div>div>div>div>a>i:hover {
+     color: #ffd800 !important;
+}
+
+.header-layout1 .header-top .header-links a:hover {
+     color: #ffd800 !important;
+}
+
+.header-layout1 {
+     background-color: #125d2f;
+}
+
+/* #endregion */
+
+/* #region  MainPage   */
+
+.custom-profile-pic {
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+}
+
+.media-box1 {
+          width: 200px !important;
+          height: 200px !important;
+          padding: 72px 8px !important; 
+     }
+
+     .media-box1 > span {
+          font-size: 45px !important; 
+     } 
+
+@media (max-width:768px) {
+     .media-box1 {
+          width: 130px !important;
+          height: 130px !important;
+          padding: 30px 8px !important; 
+     }
+
+     .media-box1 > span {
+          font-size: 35px !important; 
+     }
+     .media-box1 p {
+          font-size: 15px !important; 
+     }
+}
+
+
+
+/* #endregion  MainPage   */
+
+/* #region  blog*/
+.blog-layout1 .blog-title {
+     min-height: 7rem;
+}
+
+.blog-layout1 .blog-title a {
+     display: -webkit-box;
+     -webkit-line-clamp: 3;
+     -webkit-box-orient: vertical;
+     overflow: hidden;
+
+}
+
+.text-black {
+     color: black !important;
+     font-weight: bold !important;
+}
+
+.custom-blog-inner-author {
+     background-color: var(--theme-color) !important;
+}
+
+.blog-single .blog-audio,
+.blog-single .blog-img {
+     margin: 0;
+}
+
+.custom-img-90 {
+     width: 100% !important;
+     height: 90px !important;
+     object-fit: cover !important;
+}
+
+@media (max-width:768px) {
+     .blog-date::before {
+          display: none !important;
+     }
+}
+
+@media (max-width:512px) {
+     .blog-single:not(.has-post-thumbnail) .blog-content {
+          padding: 20px;
+     }
+
+     .custom-bloglist .blog-text {
+          line-height: 1.2;
+     }
+}
+
+
+/* #endregion  */
+
+/* #region  blog-details.html*/
+.wp-block-tag-cloud a,
+.tagcloud a {
+     padding: 5px 10px !important;
+}
+
+.custom-responsive-h1 {
+     font-size: 2.2rem !important;
+}
+
+/* #endregion  */
+
+/* #region Product Area*/
+
+.product-style1 {
+     padding: 0 !important;
+}
+
+.product-style1 .product-img img {
+     max-height: initial !important;
+}
+
+.product-style1 .social-style {
+     position: relative;
+     transform: initial !important;
+}
+
+.custom-product-card.product-about {
+     padding: 0 30px 30px 30px !important;
+     display: flex;
+     align-items: end;
+     justify-content: space-between;
+}
+
+.custom-product-card.product-about .product-title {
+     min-height: 3rem;
+     display: flex;
+     align-items: end;
+}
+
+.product-arrow {
+     width: 50px;
+     height: 50px;
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     background-color: #FFF3B2;
+     color: var(--black-color);
+     position: relative;
+
+     /* right: 40px !important; */
+     /* bottom: 40px !important; */
+}
+
+.product-arrow:hover {
+     background-color: var(--theme-color);
+}
+
+/* ürünlerimiz listelenmesi grid düzeni */
+.custom-product-grid {
+     display: grid !important;
+     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) !important;
+     gap: 20px !important;
+}
+
+/* #endregion  */
+
+/* #region breadcumb*/
+.breadcumb-wrapper {
+     position: relative;
+     z-index: 1;
+}
+
+.breadcumb-wrapper::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.6);
+     z-index: -1;
+}
+
+/* #endregion  */
+
+/* #region Provide Area*/
+#ProvideArea {
+     position: relative !important;
+}
+
+#ProvideArea::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(40, 69, 36, 0.8);
+     z-index: 0;
+}
+
+#ProvideArea>div {
+     position: relative !important;
+     z-index: 1 !important;
+}
+
+/* #endregion  */
+
+/* #region Contact */
+.contact-layout1 .vs-comment-form .comment-respond .form-control {
+     padding: 1rem;
+}
+
+/* #endregion Contact */
+
+/* #region Footer*/
+.footer-wrapper {
+     position: relative;
+     z-index: 1;
+}
+
+.footer-wrapper::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.6);
+     z-index: -1;
+}
+
+/* #endregion  */
+
+/* #region  general */
+.line-clamp-1 {
+     display: -webkit-box !important;
+     -webkit-line-clamp: 1 !important;
+     /* Kaç satır gösterilecek */
+     -webkit-box-orient: vertical !important;
+     overflow: hidden !important;
+}
+
+.line-clamp-2 {
+     display: -webkit-box !important;
+     -webkit-line-clamp: 2 !important;
+     /* Kaç satır gösterilecek */
+     -webkit-box-orient: vertical !important;
+     overflow: hidden !important;
+}
+
+.line-clamp-3 {
+     display: -webkit-box !important;
+     -webkit-line-clamp: 3 !important;
+     /* Kaç satır gösterilecek */
+     -webkit-box-orient: vertical !important;
+     overflow: hidden !important;
+}
+
+.line-clamp-4 {
+     display: -webkit-box !important;
+     -webkit-line-clamp: 4 !important;
+     /* Kaç satır gösterilecek */
+     -webkit-box-orient: vertical !important;
+     overflow: hidden !important;
+}
+
+.no-before::before {
+     display: none !important;
+}
+
+/* #endregion  general */
