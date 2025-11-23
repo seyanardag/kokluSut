@@ -37,28 +37,35 @@ body>header>div.header-top>div>div>div>div>a>i:hover {
 }
 
 .media-box1 {
-          width: 200px !important;
-          height: 200px !important;
-          padding: 72px 8px !important; 
-     }
+     width: 200px !important;
+     height: 200px !important;
+     padding: 72px 8px !important;
+}
 
-     .media-box1 > span {
-          font-size: 45px !important; 
-     } 
+.media-box1>span {
+     font-size: 45px !important;
+}
 
 @media (max-width:768px) {
      .media-box1 {
           width: 130px !important;
           height: 130px !important;
-          padding: 30px 8px !important; 
+          padding: 30px 8px !important;
      }
 
-     .media-box1 > span {
-          font-size: 35px !important; 
+     .media-box1>span {
+          font-size: 35px !important;
      }
+
      .media-box1 p {
-          font-size: 15px !important; 
+          font-size: 15px !important;
      }
+
+     .copyright-text,
+     .copyright-menu a {
+          font-size: 13px;
+     }
+
 }
 
 
