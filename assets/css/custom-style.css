@@ -193,17 +193,28 @@ body>header>div.header-top>div>div>div>div>a>i:hover {
 
 /* #region  Product-Detail */
 .product-details .vs-btn {
-    padding: 18px 20px !important; 
+     padding: 18px 20px !important;
 }
 
 @media (max-width: 767px) {
-.product-description__tab {
-     width: 13rem !important;
+     .product-description__tab {
+          width: 13rem !important;
+     }
+
+     .product-description__tab .nav .nav-link {
+          padding: 9px 0px 9px 0;
+     }
 }
 
-    .product-description__tab .nav .nav-link {
-        padding: 9px 0px 9px 0;
-    }
+.custom-blog-tag {
+     display: inline-block;
+     margin-right: 20px;
+     font-size: 16px;
+     font-weight: 600;
+     color: var(--secondary-color);
+     text-transform: uppercase;
+     font-family: var(--title-font);
+     transition: all 0.5s ease;
 }
 
 /* #endregion  Product-Detail */
@@ -253,14 +264,14 @@ body>header>div.header-top>div>div>div>div>a>i:hover {
 /* #region About */
 
 .custom-filter-image::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color:#125d2f;
-    z-index: 0;
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: #125d2f;
+     z-index: 0;
 }
 
 /* #endregion About */
@@ -270,21 +281,23 @@ body>header>div.header-top>div>div>div>div>a>i:hover {
      padding: 1rem;
 }
 
- .about-layout1 .about-bottom {
-    margin-top: -17.5%;
-    background-color: var(--smoke-color);
-} 
+.about-layout1 .about-bottom {
+     margin-top: -17.5%;
+     background-color: var(--smoke-color);
+}
+
 @media (max-width: 1299px) {
-    .about-layout1 .about-bottom {
-        margin-top: -7.5%;
-    }
+     .about-layout1 .about-bottom {
+          margin-top: -7.5%;
+     }
 }
 
 @media (max-width: 1199px) {
-    .about-layout1 .about-bottom {
-        margin-top: 40px;
-    }
+     .about-layout1 .about-bottom {
+          margin-top: 40px;
+     }
 }
+
 /* #endregion Contact */
 
 /* #region Footer*/
