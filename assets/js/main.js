@@ -429,7 +429,7 @@ $(window).on("scroll", function () {
             formMessages.html(data.responseText);
           } else {
             formMessages.html(
-              "Oops! An error occured and your message could not be sent."
+              "Mesajınız gönderilirken bir hata oluştu. Lütfen daha sonra tekrar deneyiniz."
             );
           }
         });
